@@ -3,33 +3,74 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PEP1 練習頁</title>
+  <title>星光園｜寵物善終</title>
   <style>
+    :root {
+      --bg: #f4efe8;
+      --card: #fffaf5;
+      --ink: #3b3340;
+      --muted: #6f6673;
+      --line: #e6d9ce;
+      --accent: #8b6b8f;
+    }
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
       font-family: "Segoe UI", "Microsoft JhengHei", sans-serif;
-      background: #111;
-      color: #eee;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.7;
     }
-    .card {
-      width: min(92vw, 420px);
-      padding: 28px;
-      border: 1px solid #333;
-      border-radius: 16px;
-      background: #1a1a1a;
+    header, main, footer { width: min(92vw, 720px); margin: 0 auto; }
+    header { padding: 56px 0 24px; }
+    .eyebrow { letter-spacing: .18em; font-size: 12px; color: var(--accent); }
+    h1 { margin: 8px 0 0; font-size: clamp(32px, 6vw, 48px); font-weight: 650; }
+    .tag { margin: 12px 0 0; color: var(--muted); }
+    section {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      padding: 22px 22px 18px;
+      margin: 0 0 16px;
     }
-    h1 { margin: 0 0 8px; font-size: 28px; }
-    p { margin: 0 0 12px; line-height: 1.6; color: #bbb; }
+    h2 { margin: 0 0 8px; font-size: 18px; }
+    ul { margin: 8px 0 0; padding-left: 1.1em; }
+    footer {
+      padding: 12px 0 48px;
+      color: var(--muted);
+      font-size: 13px;
+    }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>PEP1</h1>
-    <p>呢頁係用 GitHub Pages 出嚟嘅練習網站。</p>
-    <p>之後想改字，改 index.html 再 Commit 就得。</p>
-  </div>
+  <header>
+    <div class="eyebrow">HONG KONG</div>
+    <h1>星光園</h1>
+    <p class="tag">寵歸星園　星光永駐</p>
+  </header>
+  <main>
+    <section>
+      <h2>我們相信</h2>
+      <p>寵物離開，亦值得被莊重、溫柔對待。星光園計劃提供私密的告別空間與清楚的善後安排，讓家人可以慢慢說再見。</p>
+    </section>
+    <section>
+      <h2>服務方向</h2>
+      <ul>
+        <li>遺體接收與冷藏安排</li>
+        <li>個別火化／水化（視乎設施與合規）</li>
+        <li>小型私密儀式與紀念商品</li>
+        <li>與獸醫診所的轉介合作</li>
+      </ul>
+    </section>
+    <section>
+      <h2>現況</h2>
+      <p>網站處於籌備階段。牌照、場地與收費會在落實後才公布，避免誤導。</p>
+    </section>
+    <section>
+      <h2>聯絡</h2>
+      <p>電話、WhatsApp 與電郵稍後補上。</p>
+    </section>
+  </main>
+  <footer>練習頁 · 內容可隨時修改</footer>
 </body>
 </html>
